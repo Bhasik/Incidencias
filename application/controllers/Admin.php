@@ -143,9 +143,6 @@ class Admin extends CI_Controller
 
     }
 
-
-
-
     function cargarVista($output)
     {
         $this->load->view('admin/vista_admin.php', $output);

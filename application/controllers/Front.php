@@ -11,14 +11,13 @@ class Front_Controlador extends CI_Controller
         $this->load->helper('url');
         $this->load->model('Incidencias_Model');
 
-
     }
 
     public function index(){
 
-        $datos['incidencias']= $this->Incidencias_Model->getAllIncidencias(3);
+        $datos['incidencias']= $this->Incidencias_Model->getAllIncidencias(1);
 
-        $this->load->view('front/index',$datos);
+        $this->load->view('front/index.php',$datos);
 
 
     }
